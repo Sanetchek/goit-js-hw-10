@@ -24,9 +24,15 @@ const options = {
 
     if (userSelectedDate.getTime() < time) {
       iziToast.show({
+        title: 'Error',
         message: 'Please choose a date in the future',
-        color: 'red',
-        position: 'topRight'
+        color: '#ef4040',
+        position: 'topRight',
+        messageColor: '#ffffff',
+        titleColor: '#ffffff',
+        backgroundColor: '#ef4040',
+        image: '../img/oct.svg',
+        imageWidth: 24
       });
       timerBtn.setAttribute('disabled', true);
     } else {
@@ -111,4 +117,4 @@ function onTimerStart(event) {
 flatpickr(dateChooseField, options);
 
 // Evants
-timerBtn.addEventListener('click', onTimerStart)
+timerBtn.addEventListener('click', onTimerStart);
