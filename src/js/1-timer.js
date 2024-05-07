@@ -31,7 +31,7 @@ const options = {
         messageColor: '#ffffff',
         titleColor: '#ffffff',
         backgroundColor: '#ef4040',
-        image: '../img/oct.svg',
+        image: './img/oct.svg',
         imageWidth: 24
       });
       timerBtn.setAttribute('disabled', true);
