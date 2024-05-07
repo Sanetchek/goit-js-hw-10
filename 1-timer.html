@@ -2,43 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vanilla-app-template/assets/javascript-8dac5379.svg" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/modulepreload-polyfill-3cfb730f.js"></script>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/vendor-77e16229.js"></script>
-    <script type="module" crossorigin src="/vanilla-app-template/assets/1-timer-1e0f492e.js"></script>
+    <title>Timer</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    
+    <script type="module" crossorigin src="/vanilla-app-template/commonHelpers.js"></script>
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/styles-e0ac0f67.js">
+    <link rel="modulepreload" crossorigin href="/vanilla-app-template/assets/vendor-77e16229.js">
+    <link rel="stylesheet" href="/vanilla-app-template/assets/styles-745d59ab.css">
     <link rel="stylesheet" href="/vanilla-app-template/assets/vendor-7a007824.css">
   </head>
   <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
-    </section>
+    <main class="container">
+      <section class="main">
+        <a href="./index.html">Go to home</a>
+        <h1>Timer</h1>
+      </section>
 
-    <div class="date">
-      <input type="text" id="datetime-picker" />
-      <button type="button" data-start disabled>Start</button>
-    </div>
+      <div class="date">
+        <input type="text" id="datetime-picker" />
+        <button type="button" class="blue" data-start disabled>Start</button>
+      </div>
 
-    <div class="timer">
-      <div class="field">
-        <span class="value" data-days>00</span>
-        <span class="label">Days</span>
+      <div class="timer">
+        <div class="field">
+          <span class="value" data-days>00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="field">
+          <span class="value" data-hours>00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="field">
+          <span class="value" data-minutes>00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="field">
+          <span class="value" data-seconds>00</span>
+          <span class="label">Seconds</span>
+        </div>
       </div>
-      <div class="field">
-        <span class="value" data-hours>00</span>
-        <span class="label">Hours</span>
-      </div>
-      <div class="field">
-        <span class="value" data-minutes>00</span>
-        <span class="label">Minutes</span>
-      </div>
-      <div class="field">
-        <span class="value" data-seconds>00</span>
-        <span class="label">Seconds</span>
-      </div>
-    </div>
+    </main>
 
     
   </body>
